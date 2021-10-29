@@ -1,0 +1,17 @@
+This is a real-time info API
+Passing a sotck-code to get the prices.
+---
+tags:
+  - real-time price API
+parameters:
+  - name: stock-code
+    in: path
+    type: string
+    required: true
+    description: The code for a stock
+responses:
+    500:
+      description: code error
+    200:
+      description: successfully 
+      example: {'code':1,'message':'注册成功'}
